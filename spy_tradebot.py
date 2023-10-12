@@ -4,14 +4,14 @@ from ta.trend import SMAIndicator, MACD, ADXIndicator
 import matplotlib.pyplot as plt
 
 # Fetch data
-df = yf.download('SPY', start='2010-01-01', end='2023-10-10')
+df = yf.download('SPY', start='2015-01-01', end='2023-10-10')
 
 # Define the optimal parameters
 sma_window_slow = 55
 sma_window_fast = 20
 rsi_window = 5
-macd_window_slow = 31
-macd_window_fast = 14
+macd_window_slow = 46
+macd_window_fast = 22
 adx_window = 16
 
 # Calculate SMA, RSI, MACD, and ADX using the optimal parameters
